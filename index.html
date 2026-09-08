@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlossWerk Detailing</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#fooldal">GlossWerk</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Navigáció megnyitása">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fooldal">Főoldal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#szolgaltatasok">Szolgáltatások</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#velemenyek">Vélemények</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#elerhetoseg">Elérhetőség</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Időpontfoglalás</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="fooldal">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="carousel-slide-content">
+                        <div class="container text-center text-white">
+                            <h1>GlossWerk Detailing</h1>
+                            <p>Prémium autóápolás kompromisszumok nélkül.</p>
+                            <a href="form.html" class="btn btn-light btn-lg">
+                                Időpontfoglalás
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-slide-content">
+                        <div class="container text-center text-white">
+                            <h2>Gépi polírozás</h2>
+                            <p>Visszaadjuk autód fényezésének eredeti ragyogását.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-slide-content">
+                        <div class="container text-center text-white">
+                            <h2>Kerámia bevonat</h2>
+                            <p>Hosszú távú védelem és prémium megjelenés.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section id="szolgaltatasok" class="py-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2>Szolgáltatásaink</h2>
+                    <p>
+                        Professzionális autóápolási megoldások kívül és belül.
+                    </p>
+                </div>
+
+                <div class="services-container">
+
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Külső mosás</h3>
+                            <p class="card-text">
+                                Alapos és kíméletes külső tisztítás professzionális autóápolási szerekkel.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Belső detailing</h3>
+                            <p class="card-text">
+                                Az utastér teljes tisztítása, ápolása és felfrissítése.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Gépi polírozás</h3>
+                            <p class="card-text">
+                                Kisebb karcok és fényezési hibák eltávolítása, ragyogó felület kialakítása.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Kerámia bevonat</h3>
+                            <p class="card-text">
+                                Tartós védelem a szennyeződésekkel és környezeti hatásokkal szemben.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="velemenyek" class="py-5 bg-light">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2>Ügyfeleink véleménye</h2>
+                </div>
+
+                <div class="reviews-container">
+
+                    <div class="card review-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Kovács Péter</h3>
+                            <p class="rating">★★★★★</p>
+                            <p class="card-text">
+                                Az autó teljesen újszerű lett. A fényezés sokkal szebb, mint előtte.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card review-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Nagy Márk</h3>
+                            <p class="rating">★★★★★</p>
+                            <p class="card-text">
+                                Precíz munka, a belső tér nagyon szép és tiszta lett.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card review-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Szabó Dávid</h3>
+                            <p class="rating">★★★★★</p>
+                            <p class="card-text">
+                                A polírozás után eltűntek a kisebb karcok, nagyon látványos lett az eredmény.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+
+            <p class="mb-0">
+                Készítette: Lakatos Bence & Vellai-Nemes Samu
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
