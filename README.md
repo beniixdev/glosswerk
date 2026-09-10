@@ -1,5 +1,10 @@
 **Webprogramozás Projekt 1. Vellai-Nemes Samu & Lakatos Bence**
 
+2026-09-10:
+- form.html felépítése
+- alapvető style.css felépítése
+- egyeztetés a továbbiakról
+
 2026-09-08:
 - index.html felépítése (keret)
 - readme készítése
