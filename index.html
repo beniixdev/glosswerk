@@ -7,7 +7,7 @@
     <title>GlossWerk Detailing</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
@@ -51,9 +51,12 @@
         <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Első dia"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"
+                    aria-label="Második dia"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"
+                    aria-label="Harmadik dia"></button>
             </div>
 
             <div class="carousel-inner">
@@ -92,10 +95,12 @@
 
             <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Előző</span>
             </button>
 
             <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Következő</span>
             </button>
 
         </div>
@@ -200,13 +205,42 @@
             </div>
         </section>
 
+        <section id="elerhetoseg" class="contact-section py-5">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <p class="section-kicker">Kapcsolat</p>
+                    <h2>Adj új fényt az autódnak!</h2>
+                    <p>
+                        Írd meg, melyik szolgáltatás érdekel, és küldd el a
+                        foglalási igényedet az online űrlapon.
+                    </p>
+                    <a class="btn btn-primary btn-lg" href="form.html">Időpontot foglalok</a>
+                </div>
+
+                <div class="booking-steps" aria-label="A foglalás lépései">
+                    <div class="booking-step">
+                        <span>01</span>
+                        <p>Válaszd ki a kívánt szolgáltatást.</p>
+                    </div>
+                    <div class="booking-step">
+                        <span>02</span>
+                        <p>Add meg az autó és az időpont adatait.</p>
+                    </div>
+                    <div class="booking-step">
+                        <span>03</span>
+                        <p>Küldd el a foglalási igényedet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
 
             <p class="mb-0">
-                Készítette: Lakatos Bence & Vellai-Nemes Samu
+                &copy; 2026 GlossWerk Detailing &middot; Készítette: Lakatos Bence és Vellai-Nemes Samu
             </p>
         </div>
     </footer>
