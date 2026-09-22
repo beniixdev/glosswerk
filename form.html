@@ -1,89 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Időpontfoglalás | GlossWerk</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#141715">
+    <meta name="description" content="Kérj időpontot a GlossWerk autóápolási szolgáltatásaira.">
+    <title>Időpontfoglalás — GlossWerk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
 </head>
 
 <body class="booking-page" onload="loadForm()">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">GlossWerk</a>
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarMenu"
-                aria-controls="navbarMenu"
-                aria-expanded="false"
-                aria-label="Navigáció megnyitása"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Főoldal</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="form.html" aria-current="page">Időpontfoglalás</a>
-                    </li>
-                </ul>
-            </div>
+    <header class="site-header">
+        <div class="container nav-inner"><a class="brand" href="index.html" aria-label="GlossWerk főoldal"><span
+                    class="brand-mark" aria-hidden="true">G<span>.</span></span><span
+                    class="brand-name">GLOSSWERK<small>DETAILING STUDIO</small></span></a><button class="menu-toggle"
+                type="button" aria-label="Menü megnyitása" aria-controls="primary-nav"
+                aria-expanded="false"><span></span><span></span></button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Fő navigáció"><a
+                    href="index.html#szolgaltatasok">Szolgáltatások</a><a href="index.html#rolunk">A műhely</a><a
+                    href="index.html#folyamat">Hogyan dolgozunk</a><a class="nav-cta" href="form.html"
+                    aria-current="page">Időpontot kérek <span aria-hidden="true">↗</span></a></nav>
         </div>
-    </nav>
-
-    <main class="py-5">
-        <div class="container">
-
-            <div class="form-heading text-center mb-5">
-                <p class="section-kicker">Online bejelentkezés</p>
-                <h1>Időpontfoglalás</h1>
-                <p>
-                    Töltsd ki az alábbi űrlapot, és foglalj időpontot autód számára.
-                </p>
+    </header>
+    <main>
+        <section class="page-intro">
+            <div class="container">
+                <p class="eyebrow eyebrow-light">GLOSSWERK / FOGLALÁS</p>
+                <h1>Az első lépés<br><em>itt kezdődik.</em></h1>
+                <p>Írd meg, mire van szüksége az autódnak, és add meg a számodra megfelelő dátumot.</p>
             </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-md-9">
-
-                    <div class="card shadow">
-                        <div class="card-body p-4">
-
-                            <div id="form-container"></div>
-
-                        </div>
+        </section>
+        <section class="booking-section">
+            <div class="container booking-layout">
+                <div class="form-panel">
+                    <div class="panel-heading">
+                        <p class="eyebrow">IDŐPONTIGÉNY</p>
+                        <h2>Az autód adatai</h2>
                     </div>
-
+                    <div id="form-container"></div>
+                    <p class="form-note">Az űrlap elküldése után a megadott adatok összesítő oldalon jelennek meg.</p>
                 </div>
+                <aside class="side-panel">
+                    <p class="eyebrow">HOGYAN MŰKÖDIK?</p>
+                    <h3>Egyszerűen, néhány lépésben.</h3>
+                    <p>Válaszd ki a szolgáltatást, add meg az autó adatait és az általad kívánt napot.</p>
+                    <ul>
+                        <li><b>01</b> Szolgáltatás kiválasztása</li>
+                        <li><b>02</b> Adatok és dátum megadása</li>
+                        <li><b>03</b> Foglalási igény áttekintése</li>
+                    </ul>
+                </aside>
             </div>
-
-        </div>
+        </section>
     </main>
-
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-1">
-                &copy; 2026 GlossWerk Detailing - Minden jog fenntartva.
-            </p>
-
-            <p class="mb-0">
-                Készítette: Lakatos Bence és Vellai-Nemes Samu
-            </p>
-        </div>
+    <footer class="site-footer">
+        <div class="container footer-main"><a class="brand" href="index.html"><span class="brand-mark"
+                    aria-hidden="true">G<span>.</span></span><span class="brand-name">GLOSSWERK<small>DETAILING
+                        STUDIO</small></span></a><span>Autóápolás, minden részletében.</span><a href="index.html">Vissza
+                a főoldalra ↗</a></div>
+        <div class="container footer-bottom"><span>© 2026 GlossWerk Detailing</span><span>Készítette: Lakatos Bence és
+                Vellai-Nemes Samu</span></div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-
 </body>
+
 </html>

@@ -17,4 +17,12 @@
 - ötletelés a későbbiekről
 
 
-Ez egy reszponzív autókozmetikai weboldal Bootstrap, Flexbox, CSS animációk és JavaScript alapú dinamikus időpontfoglaló űrlap használatával.
+Ez egy reszponzív autókozmetikai weboldal saját CSS-arculattal és JavaScript-alapú, dinamikus időpontigénylő űrlappal.
+
+## Jelenlegi változat
+
+Az oldal három statikus HTML-fájlból áll: a `index.html` a kezdőlap, a `form.html` az időpontigény űrlapja, a `results.html` pedig a megadott adatok összesítője. A megjelenést a `style2.css`, az űrlapot és a mobilmenüt a `script.js` kezeli. A kezdőlap megnyitható közvetlenül böngészőben.
+
+A foglalási adatok jelenleg csak a böngésző `localStorage` tárhelyére kerülnek. Nincs szerveroldali feldolgozás vagy tényleges időpont-visszaigazolás.
+
+Az `assets/hero-car.png` és az `assets/detailing-work.png` a projekthez generált, helyben tárolt illusztratív fotók.

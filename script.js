@@ -143,8 +143,8 @@ function loadForm() {
 
     const submitButton = document.createElement("button");
     submitButton.type = "submit";
-    submitButton.className = "btn btn-primary btn-lg submit-button";
-    submitButton.textContent = "Foglalási igény elküldése";
+    submitButton.className = "button button-copper submit-button";
+    submitButton.textContent = "Adatok áttekintése ↗";
 
     form.append(fields, submitButton);
     form.addEventListener("submit", saveForm);
@@ -185,4 +185,23 @@ function loadResults() {
         createResultRow("Kívánt dátum", result.date),
         createResultRow("Megjegyzés", result.message)
     );
+}
+
+const menuToggle = document.querySelector(".menu-toggle");
+const primaryNav = document.querySelector(".primary-nav");
+
+if (menuToggle && primaryNav) {
+    menuToggle.addEventListener("click", function () {
+        const isOpen = primaryNav.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Menü bezárása" : "Menü megnyitása");
+    });
+
+    primaryNav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            primaryNav.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Menü megnyitása");
+        });
+    });
 }
