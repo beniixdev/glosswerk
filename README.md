@@ -1,11 +1,10 @@
 **Webprogramozás Projekt 1. Vellai-Nemes Samu & Lakatos Bence**
 
+
 2026-09-15:
-- új, reszponzív megjelenés a `style2.css` fájlban
-- dinamikusan generált időpontfoglaló űrlap egyszerű JavaScript-függvényekkel
-- az űrlap adatainak megjelenítése külön eredményoldalon
-- kötelező mező-, karakterszám-, telefonszám- és dátumvalidáció
-- kapcsolat szakasz és akadálymentesebb carousel vezérlők
+- results.html felépítése
+- script.js elkészítése - form
+- style2.css elkészítése (sokkal szebb design)
 
 2026-09-10:
 - form.html felépítése
