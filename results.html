@@ -1,18 +1,67 @@
 <!doctype html>
 <html lang="hu">
+
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#141715">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141715">
   <title>Foglalási összesítő — GlossWerk</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style2.css">
 </head>
+
 <body class="booking-page" onload="loadResults()">
-  <header class="site-header"><div class="container nav-inner"><a class="brand" href="index.html" aria-label="GlossWerk főoldal"><span class="brand-mark" aria-hidden="true">G<span>.</span></span><span class="brand-name">GLOSSWERK<small>DETAILING STUDIO</small></span></a><button class="menu-toggle" type="button" aria-label="Menü megnyitása" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span></button><nav id="primary-nav" class="primary-nav" aria-label="Fő navigáció"><a href="index.html#szolgaltatasok">Szolgáltatások</a><a href="index.html#rolunk">A műhely</a><a class="nav-cta" href="form.html">Új foglalási igény <span aria-hidden="true">↗</span></a></nav></div></header>
-  <main><section class="page-intro"><div class="container"><p class="eyebrow eyebrow-light">GLOSSWERK / ÖSSZESÍTŐ</p><h1>A részletek<br><em>egy helyen.</em></h1><p>Tekintsd át a megadott adatokat. Ez az oldal a böngésződben tárolt foglalási igényt mutatja.</p></div></section>
-    <section class="booking-section"><div class="container booking-layout"><div class="form-panel"><div class="panel-heading"><p class="eyebrow">FOGLALÁSI ADATOK</p><h2>Összesítő</h2></div><div id="results-container" class="results-list"></div><div class="result-actions"><a class="button button-copper" href="form.html">Új igény <span aria-hidden="true">↗</span></a><a class="button button-outline" href="index.html">Vissza a főoldalra <span aria-hidden="true">←</span></a></div></div><aside class="side-panel"><p class="eyebrow">FONTOS TUDNI</p><h3>Az igényed áttekintése</h3><p>Az adatok csak ebben a böngészőben jelennek meg. Az oldal nem továbbítja őket a műhelynek.</p></aside></div></section>
+  <header class="site-header">
+    <div class="container nav-inner"><a class="brand" href="index.html" aria-label="GlossWerk főoldal"><span class="brand-name">GLOSSWERK<small>DETAILING
+            STUDIO</small></span></a><button class="menu-toggle" type="button" aria-label="Menü megnyitása"
+        aria-controls="primary-nav" aria-expanded="false"><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Fő navigáció"><a
+          href="index.html#szolgaltatasok">Szolgáltatások</a><a href="index.html#rolunk">A műhely</a><a class="nav-cta"
+          href="form.html">Új foglalási igény <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <p class="eyebrow eyebrow-light">GLOSSWERK / ÖSSZESÍTŐ</p>
+        <h1>A részletek<br><em>egy helyen.</em></h1>
+        <p>A foglalási igényed sikeresen bekerült az adatbázisba.</p>
+      </div>
+    </section>
+    <section class="booking-section">
+      <div class="container booking-layout">
+        <div class="form-panel">
+          <div class="panel-heading">
+            <p class="eyebrow">FOGLALÁSI ADATOK</p>
+            <h2>Összesítő</h2>
+          </div>
+          <div id="results-container" class="results-list"></div>
+          <div class="result-actions"><a class="button button-copper" href="form.html">Új igény <span
+                aria-hidden="true">↗</span></a><a class="button button-outline" href="index.html">Vissza a főoldalra
+              <span aria-hidden="true">←</span></a></div>
+        </div>
+        <aside class="side-panel">
+          <p class="eyebrow">MI TÖRTÉNIK MOST?</p>
+          <h3>Megkaptuk az igényed.</h3>
+          <p>A foglalás jelenleg feldolgozás alatt áll. A végleges időpont egyeztetéséhez a megadott elérhetőségeid
+            egyikén keresünk.</p>
+        </aside>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container footer-main"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">G<span>.</span></span><span class="brand-name">GLOSSWERK<small>DETAILING STUDIO</small></span></a><span>Autóápolás, minden részletében.</span><a href="index.html">Vissza a főoldalra ↗</a></div><div class="container footer-bottom"><span>© 2026 GlossWerk Detailing</span><span>Készítette: Lakatos Bence és Vellai-Nemes Samu</span></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-main"><a class="brand" href="index.html"><span class="brand-mark"
+          aria-hidden="true">G<span>.</span></span><span class="brand-name">GLOSSWERK<small>DETAILING
+            STUDIO</small></span></a><span>Autóápolás, minden részletében.</span><a href="index.html">Vissza a főoldalra
+        ↗</a></div>
+    <div class="container footer-bottom"><span>© 2026 GlossWerk Detailing</span><span>Készítette: Lakatos Bence és
+        Vellai-Nemes Samu</span></div>
+  </footer>
   <script src="script.js"></script>
 </body>
+
 </html>

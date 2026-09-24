@@ -10,6 +10,22 @@
     --container: 1280px
 }
 
+.form-feedback {
+  min-height: 1.5rem;
+  margin: 0.75rem 0;
+  color: #565b57;
+}
+
+.form-feedback.error,
+.results-list.error {
+  color: #a43d32;
+}
+
+.submit-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
 * {
     box-sizing: border-box
 }
