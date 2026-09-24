@@ -8,6 +8,7 @@
 - szerveroldali adatellenőrzés és sebességkorlátozás hozzáadása
 - a foglalási összesítő adatbázis-alapú működésének elkészítése
 - környezeti változók és biztonságos Supabase-kulcskezelés beállítása
+- a frontend és az Express backend felkészítése Vercel deploymentre
 
 2026-09-15:
 - results.html felépítése

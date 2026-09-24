@@ -56,6 +56,9 @@ const supabase = createClient(supabaseUrl, supabaseSecretKey, {
 const app = express();
 
 app.disable("x-powered-by");
+if (process.env.VERCEL) {
+  app.set("trust proxy", 1);
+}
 app.use(
   helmet({
     contentSecurityPolicy: false,
@@ -229,21 +232,8 @@ app.get("/api/bookings/:id", bookingLimiter, async (request, response) => {
   return response.json({ booking: toPublicBooking(data) });
 });
 
-app.use("/assets", express.static(path.join(__dirname, "assets")));
-app.get("/style.css", (_request, response) => response.sendFile(path.join(__dirname, "style.css")));
-app.get("/style2.css", (_request, response) => response.sendFile(path.join(__dirname, "style2.css")));
-app.get("/script.js", (_request, response) => response.sendFile(path.join(__dirname, "script.js")));
-
-const pages = new Map([
-  ["/", "index.html"],
-  ["/index.html", "index.html"],
-  ["/form.html", "form.html"],
-  ["/results.html", "results.html"]
-]);
-
-app.get([...pages.keys()], (request, response) => {
-  response.sendFile(path.join(__dirname, pages.get(request.path)));
-});
+const publicDirectory = path.join(__dirname, "public");
+app.use(express.static(publicDirectory, { extensions: ["html"] }));
 
 app.use((_request, response) => {
   response.status(404).send("Az oldal nem található.");
@@ -254,6 +244,10 @@ app.use((error, _request, response, _next) => {
   response.status(500).json({ error: "Váratlan szerverhiba történt." });
 });
 
-app.listen(port, "127.0.0.1", () => {
-  console.log(`GlossWerk elindult: http://localhost:${port}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(port, "127.0.0.1", () => {
+    console.log(`GlossWerk elindult: http://localhost:${port}`);
+  });
+}
+
+export default app;
