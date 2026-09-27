@@ -1,70 +1,48 @@
 <!doctype html>
 <html lang="hu">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#141715">
-    <meta name="description" content="Kérj időpontot a GlossWerk autóápolási szolgáltatásaira.">
-    <title>Időpontfoglalás — GlossWerk</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17212b">
+  <meta name="description" content="Kérj időpontot a GlossWerk autókozmetikai szolgáltatásaira.">
+  <title>Időpontfoglalás | GlossWerk</title>
+  <link rel="stylesheet" href="style2.css">
 </head>
-
 <body class="booking-page" onload="loadForm()">
-    <header class="site-header">
-        <div class="container nav-inner"><a class="brand" href="index.html" aria-label="GlossWerk főoldal"><span
-                    class="brand-name">GLOSSWERK<small>DETAILING STUDIO</small></span></a><button class="menu-toggle"
-                type="button" aria-label="Menü megnyitása" aria-controls="primary-nav"
-                aria-expanded="false"><span></span><span></span></button>
-            <nav id="primary-nav" class="primary-nav" aria-label="Fő navigáció"><a
-                    href="index.html#szolgaltatasok">Szolgáltatások</a><a href="index.html#rolunk">A műhely</a><a
-                    href="index.html#folyamat">Hogyan dolgozunk</a><a class="nav-cta" href="form.html"
-                    aria-current="page">Időpontot kérek <span aria-hidden="true">↗</span></a></nav>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="GlossWerk főoldal"><span class="brand-name">GlossWerk<small>autókozmetika</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Menü megnyitása" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Fő navigáció">
+        <a href="index.html#szolgaltatasok">Szolgáltatások</a>
+        <a href="index.html#rolunk">Rólunk</a>
+        <a href="index.html#folyamat">Foglalás menete</a>
+        <a class="nav-cta" href="form.html" aria-current="page">Időpontfoglalás</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-intro">
+      <div class="container"><p class="eyebrow">Online ügyintézés</p><h1>Időpontfoglalás</h1><p>Töltsd ki az adatokat, majd küldd el az időpontigényedet.</p></div>
+    </section>
+    <section class="booking-section">
+      <div class="container booking-layout">
+        <div class="form-panel">
+          <div class="panel-heading"><h2>Foglalási adatok</h2><p>A csillaggal jelölt mezők kitöltése kötelező.</p></div>
+          <div id="form-container"></div>
+          <p class="form-note">A beküldés után az összesítő oldalon ellenőrizheted a megadott adatokat.</p>
         </div>
-    </header>
-    <main>
-        <section class="page-intro">
-            <div class="container">
-                <h1>Az első lépés<br><em>itt kezdődik.</em></h1>
-                <p>Írd meg, mire van szüksége az autódnak, és add meg a számodra megfelelő dátumot.</p>
-            </div>
-        </section>
-        <section class="booking-section">
-            <div class="container booking-layout">
-                <div class="form-panel">
-                    <div class="panel-heading">
-                        <p class="eyebrow">IDŐPONTIGÉNY</p>
-                        <h2>Az autód adatai</h2>
-                    </div>
-                    <div id="form-container"></div>
-                    <p class="form-note">Az űrlap elküldése után a megadott adatok összesítő oldalon jelennek meg.</p>
-                </div>
-                <aside class="side-panel">
-                    <p class="eyebrow">HOGYAN MŰKÖDIK?</p>
-                    <h3>Egyszerűen, néhány lépésben.</h3>
-                    <p>Válaszd ki a szolgáltatást, add meg az autó adatait és az általad kívánt napot.</p>
-                    <ul>
-                        <li><b>01</b> Szolgáltatás kiválasztása</li>
-                        <li><b>02</b> Adatok és dátum megadása</li>
-                        <li><b>03</b> Foglalási igény áttekintése</li>
-                    </ul>
-                </aside>
-            </div>
-        </section>
-    </main>
-    <footer class="site-footer">
-        <div class="container footer-main"><a class="brand" href="index.html"><span class="brand-name">GLOSSWERK<small>DETAILING
-                        STUDIO</small></span></a><span>Autóápolás, minden részletében.</span><a href="index.html">Vissza
-                a főoldalra ↗</a></div>
-        <div class="container footer-bottom"><span>© 2026 GlossWerk Detailing</span><span>Készítette: Lakatos Bence és
-                Vellai-Nemes Samu</span></div>
-    </footer>
-    <script src="script.js"></script>
+        <aside class="side-panel">
+          <h2>Hasznos tudnivalók</h2>
+          <ul><li>Az időpontigény még nem végleges foglalás.</li><li>Legfeljebb 90 nappal előre választhatsz dátumot.</li><li>Az egyeztetéshez e-mailben vagy telefonon keresünk.</li></ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-main"><a class="brand" href="index.html"><span class="brand-name">GlossWerk<small>autókozmetika</small></span></a><a href="index.html">Vissza a főoldalra</a></div>
+    <div class="container footer-bottom"><span>© 2026 GlossWerk</span><span>Készítette: Lakatos Bence és Vellai-Nemes Samu</span></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>

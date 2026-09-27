@@ -13,6 +13,9 @@ function createField(labelText, inputType, inputName, placeholder, minLength, ma
     input.className = "form-control";
     input.placeholder = placeholder;
     input.required = true;
+    if (inputName === "name") input.autocomplete = "name";
+    if (inputName === "email") input.autocomplete = "email";
+    if (inputName === "phone") input.autocomplete = "tel";
     if (minLength) input.minLength = minLength;
     if (maxLength) input.maxLength = maxLength;
     group.append(label, input);
@@ -105,7 +108,7 @@ async function saveForm(event) {
         feedback.textContent = error.message;
         feedback.classList.add("error");
         submitButton.disabled = false;
-        submitButton.textContent = "Foglalási igény elküldése ↗";
+        submitButton.textContent = "Foglalási igény elküldése";
     }
 }
 
@@ -141,8 +144,8 @@ function loadForm() {
     feedback.setAttribute("aria-live", "polite");
     const submitButton = document.createElement("button");
     submitButton.type = "submit";
-    submitButton.className = "button button-copper submit-button";
-    submitButton.textContent = "Foglalási igény elküldése ↗";
+    submitButton.className = "button button-primary submit-button";
+    submitButton.textContent = "Foglalási igény elküldése";
     form.append(fields, feedback, submitButton);
     form.addEventListener("submit", saveForm);
     container.appendChild(form);
